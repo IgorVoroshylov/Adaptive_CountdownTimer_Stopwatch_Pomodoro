@@ -1,0 +1,83 @@
+.stopwatch {
+   padding: 100px 0;
+   color: #fff;
+   background: url(../../assets/timer1.jpeg) 0 0/cover no-repeat;
+   height: 100vh;
+   overflow: scroll;
+   font-family: 'Quicksand', sans-serif;
+
+   .stopwatch_timer {
+      text-align: center;
+
+      .stopwatch_timer_title {
+         font-size: 32px;
+         font-weight: 700;
+         
+      }
+
+      .stopwatch_timer_display {
+         margin-bottom: 20px;
+         display: inline-block;
+
+         .stopwatch_timer_display_seconds {
+            color: rgb(233, 79, 58);
+         }
+      }
+   
+      .stopwatch_timer_display span {
+         font-size: 46px;
+         font-family: 'Courier New', monospace;
+      }
+   }
+
+   .stopwatch_button {
+      margin-top: 20px;
+      text-align: center;
+   }
+
+   .stopwatch_button button {
+      margin-right: 15px;
+   }
+
+   .stopwatch_button button:last-child {
+      margin-right: 0px;
+   }
+
+   .circle {
+      text-align: center;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+
+      .circle_item {
+         .circle_item_index {
+            font-size: 36px;
+            margin-right: 15px;
+         }
+
+         .circle_item_time {
+            margin: 0 auto;
+            margin-top: 15px;
+            border: 1px solid #fff;
+            display: inline-block;
+            width: 200px;
+            border-radius: 5px;
+            padding: 5px 10px 5px 10px;
+
+            .circle_item_time_dots {
+               padding: 0px 5px;
+            }
+         }
+
+         .circle_item_time span {
+            font-size: 36px;
+         }
+      }
+   }
+}
+
+@media (max-width: 767px) {
+   .stopwatch {
+      padding: 100px 0px 0px 0px;
+   }
+}

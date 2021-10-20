@@ -1,0 +1,134 @@
+:root {
+   --red: #f54e4e;
+   --green: #4aec8c;
+}
+
+.pomodoro {
+   padding: 100px 0;
+   color: #fff;
+   background: url(../../assets/timer1.jpeg) 0 0/cover no-repeat;
+   height: 100vh;
+   overflow: scroll;
+   font-family: 'Quicksand', sans-serif;
+   text-align: center;
+
+   //progressBar
+   .progressBar {
+      max-width: 300px;
+      margin: 0 auto;
+      font-family: 'Courier New', monospace;
+
+      button {
+         background-color: transparent;
+         color: white;
+         height: 70px;
+         width: 70px;
+         margin-top: 20px;
+         border: 0;
+         display: inline-block;
+      }
+
+      .settingsButton {
+         margin-top: 10px;
+         font-family: 'Quicksand', sans-serif;
+         padding: 10px 20px;
+         height: auto;
+         width: auto;
+         font-size: 1.4rem;
+         line-height: 36px;
+         background-color: rgba(211, 211, 211, 0.1);
+         border-radius: 5px;
+      }
+
+      .play_button svg:hover , .pause_button svg:hover {
+         transition-duration: 0.5s;
+         color: #84ffff;
+      }
+
+      .settingsButton svg {
+         width: 36px;
+         float: left;
+         margin-right: 5px;
+      }
+   }
+
+   //pomodoro settings_component
+   .settings {
+      text-align: left;
+
+      .settings_title {
+         font-family: 'Quicksand', sans-serif;
+         text-align: center;
+         font-size: 32px;
+         font-weight: 700;
+      }
+
+      .settings_slider {
+         height: 40px;
+         border: 2px solid var(--red);
+         border-radius: 20px;
+      }
+
+      .thumb {
+         background-color: var(--red);
+         cursor: pointer;
+         width: 40px;
+         height: 36px;
+         border-radius: 50%;
+      }
+
+      .settings_slider.greenColor {
+         border: 2px solid var(--green);
+      }
+
+      .thumb.greenColor {
+         background-color: var(--green);
+      }
+   }
+
+   .settings label {
+      display: block;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      text-transform: capitalize;
+      color: #fff;
+   }
+
+   .settings_backButton {
+      text-align: center;
+   }
+
+   .backButton {
+      margin-top: 20px;
+      padding: 10px 20px;
+      height: auto;
+      width: auto;
+      font-size: 1.4rem;
+      line-height: 36px;
+      background-color: transparent;
+      color: white;
+      background-color: rgba(211, 211, 211, 0.1);
+      border-radius: 5px;
+   }
+
+   .backButton svg {
+      width: 36px;
+      float: left;
+      margin-right: 5px;
+   }
+
+   @media (max-width: 376px) {
+      .progressBar {
+         max-width: 200px;
+      }
+   }
+}
+
+@media (max-width: 767px) {
+   .pomodoro {
+      padding: 80px 0px;
+   }
+   .progressBar {
+      max-width: 200px;
+   }
+}

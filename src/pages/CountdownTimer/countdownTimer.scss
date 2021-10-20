@@ -1,0 +1,105 @@
+.countdown {
+   padding: 100px 0;
+   color: #fff;
+   text-align: center;
+   background: url(../../assets/timer1.jpeg) 0 0/cover no-repeat;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   font-family: 'Quicksand', sans-serif;
+
+   .countdown_title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      font-weight: 700;
+      .countdown_title_icon {
+         margin-left: 10px;
+      }
+      @media (max-width: 413px) {
+         .countdown_title_icon {
+            display: none;
+         }
+      }
+   }
+
+   .countdown_timer {
+      .countdown_timer_display {
+         margin-top: 20px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+         .countdown_timer_display_item {
+            padding: 0px 15px;
+
+            .countdown_timer_display_item_time {
+               font-size: 64px;
+               font-family: 'Courier New', monospace;
+            }
+
+            .countdown_timer_display_item_description {
+               margin-top: 5px;
+               font-size: 24px;
+            }
+
+            @media (max-width: 767px) {
+               .countdown_timer_display_item_time {
+                  font-size: 34px;
+               }
+            }
+            @media (max-width: 413px) {
+               .countdown_timer_display_item_time {
+                  font-size: 24px;
+               }
+               .countdown_timer_display_item_description {
+                  margin-top: 5px;
+                  font-size: 14px;
+               }
+            }
+         }
+
+         .countdown_timer_display_dots {
+            font-family: 'Courier New', monospace;
+            font-size: 44px;
+            margin-top: 5px;
+            align-self: start;
+         }
+
+         @media (max-width: 767px) {
+            .countdown_timer_display_item {
+               padding: 0px 5px;
+            }
+            .countdown_timer_display_dots {
+               font-size: 24px;
+               margin-top: 0px;
+            }
+         }
+         @media (max-width: 413px) {
+            .countdown_timer_display_item {
+               padding: 0px 0px;
+            }
+         }
+      }
+   }
+
+   .form {
+      max-width: 200px;
+      margin: 0px auto 0px auto;
+
+      input {
+         color: #fff;
+      }
+
+      .btn_right {
+         margin-right: 15px;
+      }
+   }
+}
+
+@media (max-width: 767px) {
+   .countdown {
+      padding: 100px 0px 0px 0px;
+   }
+}
